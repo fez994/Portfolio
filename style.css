@@ -9,3 +9,33 @@ background-size: cover;
 h2 {
   color: black;
 }
+
+.navbar {
+    margin-bottom: 1.3em;
+    background: transparent;
+    border: transparent;
+    padding-top: 12px;
+}
+
+
+ ul > li a {
+  color: white;
+  line-height: 3.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400px;
+}
+
+.navbar-brand {
+
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 400px;
+
+}
+
+
+.navbar-invert .navbar-toggle .icon-bar {
+	background-color: white;
+}

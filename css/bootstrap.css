@@ -3639,6 +3639,7 @@ tbody.collapse.in {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
+
   }
   .navbar-right .dropdown-menu-left {
     right: auto;
@@ -4171,6 +4172,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.3);
 }
 @media (min-width: 768px) {
   .navbar {
