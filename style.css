@@ -106,3 +106,24 @@ h3 {
 	padding-top: 100px;
 
 }
+
+
+.img {
+  float: left;
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  padding: 10px;
+
+  
+
+  }
+
+.image-div {
+  padding-top: 100px;
+  padding-left: 15px;
+
+  }
+
+  
