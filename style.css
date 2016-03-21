@@ -71,7 +71,7 @@ h3 {
 
 }
 
-.about {
+#about {
   padding-left: 100px;
   position: absolute;
   top: 100%;
@@ -104,26 +104,50 @@ h3 {
 	text-transform: uppercase;
 	color: #EAEAEA;
 	padding-top: 100px;
-
 }
 
 
-.img {
+#img {
   float: left;
   width: 250px;
   height: 250px;
   border-radius: 100px;
   -moz-border-radius: 100px;
   padding: 10px;
-
-  
-
   }
 
 .image-div {
   padding-top: 100px;
-  padding-left: 15px;
-
+  padding-left: 10px;
   }
 
   
+#portfolio {
+
+  padding-left: 100px;
+  position: absolute;
+  top: 100%
+  bottom: 200%;
+  width: 100%;
+  height: 100%
+  left: 0px;
+  background-color: #2e2e2c;
+  padding-top: 200px;
+  background-size: cover;
+
+
+
+}
+
+
+
+
+ padding-left: 100px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 80%;
+  background-color: #171715;
+  padding-top: 90px;
+  background-size: cover;
+  text-align: center;
