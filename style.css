@@ -84,7 +84,7 @@ h3 {
 
 }
 
-.about h2 {
+#about h2 {
   display: inline-block;
   padding: 10px 10px;
   font-size: 40px;
@@ -96,7 +96,7 @@ h3 {
   text-align: center;
 }
 
-.about p {
+#about p {
 	padding: 10px 10px;
 	font-size: 10px;
 	font-family: serif;
@@ -124,30 +124,19 @@ h3 {
   
 #portfolio {
 
-  padding-left: 100px;
-  position: absolute;
-  top: 100%
-  bottom: 200%;
-  width: 100%;
-  height: 100%
-  left: 0px;
-  background-color: #2e2e2c;
-  padding-top: 200px;
-  background-size: cover;
-
+position: absolute;
+left: 0;
+height: 950px;
+width: 100%;
+top: 179%;
+background-color: #505050;
+background-size: cover;
+-moz-background-size: cover;
+text-align: center;
+min-height: 889px;
 
 
 }
 
 
 
-
- padding-left: 100px;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 80%;
-  background-color: #171715;
-  padding-top: 90px;
-  background-size: cover;
-  text-align: center;
