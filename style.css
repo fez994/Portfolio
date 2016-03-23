@@ -134,6 +134,49 @@ background-size: cover;
 -moz-background-size: cover;
 text-align: center;
 min-height: 889px;
+}
+
+
+#ptim1  {
+border-radius: 100px;
+-moz-border-radius: 100px;
+}
+
+
+#ptim1:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.imagecontainer1 {
+  padding-top: 50px;
+  position: absolute;
+  left: 5%;
+  width: 100%;
+  height: auto;
+
+}
+
+#ptim2 {
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+#ptim2:hover {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.imagecontainer2 {
+  padding-top: 50px;
+  float: right;
+  padding-right: 2%;
 
 
 }
