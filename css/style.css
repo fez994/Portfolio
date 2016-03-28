@@ -1,10 +1,29 @@
+/* Fonts */
+@font-face {
+font-family: SlimJoe;
+src: url("../font/SlimJoe.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AzedoLight;
+  src: url("../font/Azedo-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: AzedoBold;
+  src: url("../font/Azedo-Bold.otf") format("opentype");
+}
+
+/* Off Canvas */
 
 #site-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-  
-  height: 5000px; 
+  height: 938px; 
+  min-height: 938px;
+  min-width: 100%;
+
 }
 #site-canvas {
   width: 100%;
@@ -41,12 +60,12 @@
   position: absolute;
   top: 0;
   left: -300px;
-  background: #428bca;
+  background: #1aa3ff;
   padding: 15px;
 }
 
 
-
+/* Homepage */
 
 body {
   color: #EAEAEA;
@@ -66,10 +85,12 @@ body {
 li, a {
   color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: "AzedoLight", serif;
+  letter-spacing: 2px;
   list-style: none;
   text-align: left;
+  font-weight: bold;
+  font-size: 18px;
 
 
 }
@@ -78,6 +99,7 @@ li, a {
   color: white;
   text-transform: uppercase;
   letter-spacing: 2.5px;
+  font-family: "AzedoBold", serif
 }
 
 ul {
@@ -99,3 +121,78 @@ ul {
   background-attachment: fixed;
 }
 
+#head  {
+  font-family: "AzedoBold", serif;
+  color: #EAEAEA;
+  letter-spacing: 4px;
+  font-size: 40px;
+  text-align: center;
+
+}
+
+#underhead {
+  text-align: center;
+  font-family: "AzedoLight", serif;
+  letter-spacing: 3px;
+  font-size: 23px;
+
+}
+
+
+/* Arrow */
+
+#arrow {
+  position: absolute;
+  bottom: 0;
+}
+
+#arrowcontainer a {
+  position: absolute;
+  height: 700px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+
+    }
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+        transform: scale(1.1);
+}
+
+/* About me */
+
+#about {
+  background-color: #1aa3ff;
+  position: absolute;
+  width: 100%;
+  height: 938px;
+  margin-top: 0;
+  min-height: 700px;
+  min-width: 100%;
+  top: 100%;
+
+
+
+}
+
+#about h1 {
+  font-family: "AzedoBold";
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 43px;
+  padding-top: 55px;
+  margin: 0;
+}
