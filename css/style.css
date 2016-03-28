@@ -14,6 +14,11 @@ src: url("../font/SlimJoe.otf") format("opentype");
   src: url("../font/Azedo-Bold.otf") format("opentype");
 }
 
+@font-face {
+  font-family: MoonLight;
+  src: url("../font/MoonLight.otf") format("opentype");
+}
+
 /* Off Canvas */
 
 #site-wrapper {
@@ -195,4 +200,55 @@ ul {
   font-size: 43px;
   padding-top: 55px;
   margin: 0;
+}
+
+.description {
+  text-align: center;
+  font-family: "MoonLight";
+  padding-top: 50px;
+  color: #EAEAEA;
+}
+
+
+#me {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+/* Portfolio */ 
+
+
+#portfolio {
+  position: absolute;
+  top: 200%;
+  background-color: #7ccaff;
+  width: 100%;
+  height: 105%;
+
+}
+
+
+#portfolio h1 {
+  text-align: center;
+  font-family: "AzedoBold";
+  letter-spacing: 4px;
+  font-size: 43px;
+  padding-top: 55px;
+}
+
+.gallery {
+  padding-top: 50px;
+}
+
+.main {
+  margin: 0 auto -60px;
+}
+.main .img-responsive {
+  margin-bottom: 30px;
 }

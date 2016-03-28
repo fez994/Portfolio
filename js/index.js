@@ -24,6 +24,9 @@ function toggleNav() {
 }
 
 
+
+//Smooth scroll su Arrow 
+
 $(document).ready(function (){
     $('#arrowcontainer').click(function(){
         $("html, body").animate ({
@@ -31,3 +34,4 @@ $(document).ready(function (){
         }, 'slow');
     });
 });
+
