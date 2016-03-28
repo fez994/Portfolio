@@ -1,0 +1,101 @@
+
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  
+  height: 5000px; 
+}
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+ 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  
+  
+    
+  padding: 5% 0; 
+}
+.show-nav #site-canvas {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+  
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0);
+}
+#site-menu {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  background: #428bca;
+  padding: 15px;
+}
+
+
+
+
+body {
+  color: #EAEAEA;
+ }
+
+#big-sexy {
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  vertical-align: text-top;
+  position: absolute;
+  top:0;
+  
+}
+
+li, a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style: none;
+  text-align: left;
+
+
+}
+
+#site-menu h1 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+ul {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  background-image: url(http://i.imgur.com/ON4Ye0V.jpg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
