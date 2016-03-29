@@ -136,34 +136,34 @@
     <div class="form-group">
         <label for="name" class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-            <?php echo "<p class='text-danger'>$errName</p>";?>
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name">
+            
         </div>
     </div>
     <div class="form-group">
         <label for="email" class="col-sm-2 control-label">Email</label>
         <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+            
         </div>
     </div>
     <div class="form-group">
         <label for="message" class="col-sm-2 control-label">Message</label>
         <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"> <?php echo htmlspecialchars($_POST['message']);?></textarea>
-            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+            <textarea class="form-control" rows="4" name="message"></textarea>
+            
         </div>
     </div>
     <div class="form-group">
         <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
         <div class="col-sm-10">
             <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+            
         </div>
     </div>
     <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary hvr-grow">
         </div>
     </div>
     <div class="form-group">
@@ -171,11 +171,39 @@
             <?php echo $result; ?>    
         </div>
     </div>
+</div>
 
 
+<!-- Footer -->
 
+  <div id="footer">
+    <div class="container">
+      <div class="socials"><h1>Socials</h1></div>
+      <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <h3>Give me a call!</h3>
+        <h4>+39 331 307 26 33 </h4></div>
+        </div>
+      
+      <div class="col-xs-6 col-sm-4">
+      <div class="text-center"><img src="http://i.imgur.com/ejpoKwL.png" class="img-responsive hvr-grow center-block">
 
+      <img src="http://i.imgur.com/sB2BKOH.png" class="img-responsive hvr-grow center-block">
+        
 
+      <img src="http://i.imgur.com/HU4azJa.png" class="img-responsive hvr-grow center-blcok"></div>
+      </div>
+
+      <div class="col-xs-6 col-sm-4">
+        <p>Prova</p>
+      </div>
+      
+
+            
+
+        </div>
+       </div>
+    </div>  
 </div>
 
 
