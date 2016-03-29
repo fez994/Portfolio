@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>Dente Federico Portoflio</title>
-    <!-- Bootstrap -->
 
-    <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+    <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
 
@@ -24,6 +23,9 @@
     <!-- Wow.js -->
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+
+    <!-- PHP FORM -->
+    <script type="text/javascript"></script>
 
 
   </head>
@@ -72,7 +74,7 @@
     <div class="container">
       <h1>About me</h1>
 
-      <p class="description">My name is Dente Federico and I am a full-time freelance web designer and developer who specializes in creating dynamic and beautiful web pages. I have been in the field for nearly 1 year, and have been loving every minute of it. I am a developer, entrepreneur, designer, and overall thinker. Check out some of the links below to see what I've been up to lately.</p>
+      <p class="description">My name is Dente Federico and I am a full-time freelance web designer and developer who specializes in creating dynamic and beautiful web pages. I have been in the field for less then 1 year, and have been loving every minute of it. I am a developer, entrepreneur, designer, and overall thinker. Check out some of the links below to see what I've been up to lately.</p>
 
       <p class="img-wrapper"><div class="img-wrapper"><img src="http://i.imgur.com/B9dT4Uf.jpg" id="me" class="wow animated fadeInUp"></div></p>
 
@@ -93,30 +95,31 @@
   <div class="container grid-custom">
     <div class="row">
       <div class="col-sm-6">
-        <img src="http://placehold.it/600x400/2ecc71/fff" alt="" class="img-responsive center-block">
+        <a href="http://www.enjoyparkourtest.altervista.org/" target="_blank"><img src="http://i.imgur.com/nOD6BIf.jpg" alt="" class="img-responsive center-block hvr-grow"></a>
       </div>
+
       <div class="row col-sm-6">
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/3498db/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/e74c3c/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/f1c40f/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/9b59b6/fff" alt="" class="img-responsive"></div>
+        <a href="http://codepen.io/fez994/full/KzMRMP/"><div class="col-xs-6"><img src="http://i.imgur.com/rLTqgTY.jpg" alt="" class="img-responsive hvr-grow"></a></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/e74c3c/fff" alt="" class="img-responsive hvr-grow"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/f1c40f/fff" alt="" class="img-responsive hvr-grow"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/9b59b6/fff" alt="" class="img-responsive hvr-grow"></div>
       </div>
     </div>
     <div class="row">
       <div class="row col-sm-6">
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/3498db/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/e74c3c/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/f1c40f/fff" alt="" class="img-responsive"></div>
-        <div class="col-xs-6"><img src="http://placehold.it/300x205/9b59b6/fff" alt="" class="img-responsive"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/3498db/fff" alt="" class="img-responsive hvr-grow"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/e74c3c/fff" alt="" class="img-responsive hvr-grow"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/f1c40f/fff" alt="" class="img-responsive hvr-grow"></div>
+        <div class="col-xs-6"><img src="http://placehold.it/300x205/9b59b6/fff" alt="" class="img-responsive hvr-grow"></div>
       </div>
       <div class="col-sm-6">
-        <img src="http://placehold.it/600x400/2ecc71/fff" alt="" class="img-responsive center-block">
+        <img src="http://placehold.it/600x400/2ecc71/fff" alt="" class="img-responsive center-block hvr-grow">
       </div>
     </div>
   </div>
   
-  <div class="footer-push"></div>
-</section>
+            <div class="footer-push"></div>
+        </section>
 
 
 
@@ -124,6 +127,56 @@
     </div> 
 
 
+
+<!-- Contact Form -->
+
+<div id="contact">
+  <h1>Contact me</h1>
+ <form class="form-horizontal" role="form" method="post" action="index.php">
+    <div class="form-group">
+        <label for="name" class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+            <?php echo "<p class='text-danger'>$errName</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+            <?php echo "<p class='text-danger'>$errEmail</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message" class="col-sm-2 control-label">Message</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" rows="4" name="message"> <?php echo htmlspecialchars($_POST['message']);?></textarea>
+            <?php echo "<p class='text-danger'>$errMessage</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+            <?php echo "<p class='text-danger'>$errHuman</p>";?>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <?php echo $result; ?>    
+        </div>
+    </div>
+
+
+
+
+
+</div>
 
 
 
