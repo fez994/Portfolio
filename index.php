@@ -38,4 +38,10 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
     }
 }
     }
+
+
+
+$title = "Thanks for your message";
+echo($title);
 ?>
+
