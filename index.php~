@@ -41,9 +41,7 @@ if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
 
 
 
+$title = "Thanks for your message";
+echo($title);
 ?>
 
-
-<script>
-alert("Thanks for your message, i'll answer you ASAP");
-</script>
